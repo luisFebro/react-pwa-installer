@@ -1,0 +1,12 @@
+{
+  "name": "react-pwa-installer",
+  "version": "1.0.0",
+  "description": "Turn your React site into PWA App for Android, Ios and Desktop with a customizable banner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["PWA", "react", "installer", "app", "a2hs", "homescreen", "icon", "android", "ios", "desktop"],
+  "author": "Luis Febro",
+  "license": "ISC"
+}
