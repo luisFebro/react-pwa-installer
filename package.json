@@ -8,5 +8,6 @@
   },
   "keywords": ["PWA", "react", "installer", "app", "a2hs", "homescreen", "icon", "android", "ios", "desktop"],
   "author": "Luis Febro",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": "luisFebro/react-pwa-installer"
 }

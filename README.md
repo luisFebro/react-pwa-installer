@@ -45,9 +45,9 @@ All options are passed as props.
 
 | Prop                     | Type     | Description                      |
 | ------------------------ | -------- | -------------------------------- |
-| `title`                 | string   | Custom title for banner          |
-| `icon`                  | string   | Icon for banner                  |
-| `backgroundColor`                  | string   | the background color can also be gradients or nice color patterns like those [here](https://gradienta.io)                  |
+| `icon (mandatory)`                  | string   | Icon for banner. This need to be a relative path when your icon is located in your project                  |
+| `title (optional)`                 | string   | Your title for the banner. Note that you can add html to customize or even break rows with a HTML parser         |
+| `backgroundColor (optional)`                  | string   | the background color can also be gradients or nice color patterns like those [here](https://gradienta.io)                  |
 
 ## Contributing
 
