@@ -1,7 +1,10 @@
-#react-pwa-installer
+# react-pwa-installer
+[![npm (scoped)](https://img.shields.io/npm/v/react-pwa-installer.svg)](https://www.npmjs.com/package/react-pwa-installer)
+[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/react-pwa-installer.svg)](https://www.npmjs.com/package/react-pwa-installer)
 [![GitHub license](https://img.shields.io/github/license/luisFebro/react-pwa-installer)](https://github.com/luisFebro/react-pwa-installer)
 
-Turn your React Site into PWA App for Android, Ios and Desktop
+
+Turn your React Site into PWA App for Android, iOS and Desktop with a customizable banner
 
 <img src="screenshot.jpeg" align="right" title="Screenshot" width="200px">
 
@@ -12,7 +15,7 @@ Turn your React Site into PWA App for Android, Ios and Desktop
 ## Installation
 
 ```shell
-npm i --save react-pwa-installer
+$ npm i --save react-pwa-installer
 ```
 
 ## Usage
@@ -53,3 +56,7 @@ I would appreciate feedbacks for improvements, feel free to open an issue or a p
 ## License
 
 `react-pwt-installer` was created by [@luisFebro](https://github.com/luisFebro). It is available under the MIT license. See the LICENSE file for more info.
+
+## Disclaimer
+
+Please, note that this package is still under construction and it may not work in your project as expected. Soon it will be ready to shine.
