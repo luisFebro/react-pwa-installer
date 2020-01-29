@@ -1,5 +1,4 @@
 var path = require('path');
-const pkg = require('./package.json');
 
 module.exports = {
   mode: 'production',
@@ -25,8 +24,7 @@ module.exports = {
       { test: /\.css$/, use: ['style-loader','css-loader'] },
     ]
   },
-  externals: [
-    ...Object.keys(pkg.peerDependencies),
-    ...Object.keys(pkg.dependencies)
-  ]
+  externals: {
+      'react': 'commonjs react'
+  }
 };

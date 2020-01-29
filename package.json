@@ -36,7 +36,7 @@
     "webpack-cli": "^3.3.10"
   },
   "peerDependencies": {
-    "react-dom": "^16.8.0-alpha.1"
+    "react": "16.x"
   },
   "scripts": {
     "start": "webpack --watch",
