@@ -1,14 +1,13 @@
 # react-pwa-installer
 [![npm (scoped)](https://img.shields.io/npm/v/react-pwa-installer.svg)](https://www.npmjs.com/package/react-pwa-installer)
-[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/react-pwa-installer.svg)](https://www.npmjs.com/package/react-pwa-installer)
 [![GitHub license](https://img.shields.io/github/license/luisFebro/react-pwa-installer)](https://github.com/luisFebro/react-pwa-installer)
 
 
-Turn your React Site into [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Introduction  ) App for Android, iOS and Desktop with a customizable banner
+Turn your React Site into [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Introduction) App for Android, iOS and Desktop with a customizable banner.
 
 <img src="screenshot.jpeg" align="right" title="Screenshot" width="200px">
 
-## What is it?
+## What does this package do?
 
 `react-jwt-installer` allows you to easily inform visitors that your React Site is installable and a native-like app can be placed on a smartphone or desktop's home screen for a more integrated, fast and smooth access through the app. A banner will appear with a customizable title, icon and colors and offering your new App installation.
 
