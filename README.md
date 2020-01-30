@@ -9,7 +9,7 @@ Turn your React Site into [PWA](https://developer.mozilla.org/en-US/docs/Web/Pro
 
 ## What does this package do?
 
-`react-jwt-installer` allows you to easily inform visitors that your React Site is installable and a native-like app can be placed on a smartphone or desktop's home screen for a more integrated, fast and smooth access through the app. A banner will appear with a customizable title, icon and colors and offering your new App installation. 👌
+`react-jwt-installer` allows you to easily inform visitors that your React Site is installable and a native-like app can be placed on a smartphone or desktop's home screen for a more integrated, fast and smooth access through the app. A banner will appear with a customizable title, icon and colors and offering your new App installation. You can also control when this component should appear and how.  👌
 
 ## 🔧 Installation
 
@@ -29,8 +29,8 @@ Then add the component to the main component of your app:
             ...
             <AllModals />
             <PwaInstaller
-                title="<strong>Download</strong>our app to homescreen<br />and have a faster access experience"
-                icon={`/favicon/mobile-icon-192x192.png`}
+                title="<strong>Download our app to homescreen</strong><br />and have a faster and awesome<br />access experience"
+                icon={`/icons/cool-192.png`}
             />
         <Footer />
     </BrowserRouter>
@@ -40,13 +40,15 @@ Then add the component to the main component of your app:
 
 ## Options
 
-All options are passed as props.
+These are the props that allow you customize the component:
 
-| Prop                     | Type     | Description                      |
-| ------------------------ | -------- | -------------------------------- |
-| `icon (mandatory)`                  | string   | Icon for banner. This need to be a relative path where your icon is located in your project                  |
-| `title (optional)`                 | string   | Your title for the banner. Note that you can add html tags to customize or even break rows with a HTML parser         |
-| `backgroundColor (optional)`                  | string   | the background color can also be gradients or nice color patterns like those [here](https://gradienta.io)                  |
+| Prop                     | Type     | Default Value |Description                      |
+| ------------------------ | -------- | -------- | -------------------------------- |
+| `icon (mandatory)`                  | string   | - | Icon for banner. This need to be a relative path where your icon is located in your project                  |
+| `title (optional)`                 | string   | `add to homescreen` | Your title for the banner. Note that you can add html tags to customize or even break rows with a HTML parser         |
+| `color (optional)`                  | string   | `black` | the color for both the closing button and action text to call your users to download your app                  |
+| `backgroundColor (optional)`                  | string   | `white` | the background color can also be gradients or nice color patterns like those [here](https://gradienta.io)                  |
+| `run (optional)`                  | boolean   | `true` | this allow you run the banner programmatically. You can use something like `useState` to switch the state after some user's action (e.g after user registration) |
 
 ## 💪 Contributing
 
@@ -58,4 +60,4 @@ I would appreciate feedbacks for improvements, feel free to open an issue or a p
 
 ## Disclaimer
 
-Please, note that this package is still under construction and it may not work in your project as expected. Soon it will be ready to shine.
+Please, note that this package is still under construction and it may not work in your project as expected. Come back a few hours...

@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-// import { isInStandaloneMode } from './utils';
-// import parse from 'html-react-parser';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import { isInStandaloneMode } from './utils';
+import parse from 'html-react-parser';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './style.css';
+import PropTypes from 'prop-types';
+
+PwaInstaller.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  run: PropTypes.bool,
+  backgroundColor: PropTypes.string,
+  color: PropTypes.string,
+}
 
 function closeWindow() {
     window.close();
@@ -23,26 +31,26 @@ export default function PwaInstaller({
     // const dispatch = useStoreDispatch();
 
     // animation on scrolling settings
-    // AOS.init({
-    //     offset: 150,
-    //     delay: 1000,
-    // });
+    AOS.init({
+        offset: 100,
+        delay: 1000,
+    });
     // end animation on scrolling settings
 
-    // useEffect(() => {
-    //     window.addEventListener('beforeinstallprompt', (e) => { // n1
-    //         // Prevent Chrome 67 and earlier from automatically showing the prompt
-    //         e.preventDefault();
-    //         // Stash the event so it can be triggered later.
-    //         deferredPrompt = e;
-    //         // setBannerVisible(true);
-    //     })
-    // }, [])
+    useEffect(() => {
+        window.addEventListener('beforeinstallprompt', (e) => { // n1
+            // Prevent Chrome 67 and earlier from automatically showing the prompt
+            e.preventDefault();
+            // Stash the event so it can be triggered later.
+            deferredPrompt = e;
+            setBannerVisible(true);
+        })
+    }, [])
 
     const handlePwaInstall = () => {
         if(deferredPrompt) {
             // Show the prompt
-            // setBannerVisible(false);
+            setBannerVisible(false);
             deferredPrompt.prompt();
             // Wait for the user to respond to the prompt
             deferredPrompt.userChoice.then(function(choiceResult) {
@@ -62,13 +70,19 @@ export default function PwaInstaller({
 
 
     const styles = {
-        icon: {
-            animationDelay: '4s',
+        textAndClosingBtn: {
+            color: color || "white";
         },
-        closeBtn: {
-            animationDelay: '6s',
-            zIndex: 2100,
-        },
+        banner: {
+            background: backgroundColor || "black";
+        }
+        // icon: {
+        //     animationDelay: '4s',
+        // },
+        // closeBtn: {
+        //     animationDelay: '6s',
+        //     zIndex: 2100,
+        // },
     }
 
     // RENDER
@@ -77,32 +91,33 @@ export default function PwaInstaller({
             className="add-to-home-text text-default"
         >
             <a
-                className="text-white"
+                style={styles.textAndClosingBtn}
             >
-              { title }
+              { parse(title) }
             </a>
         </div>
     );
 
-    const handleCloseBannerBtnClick = () => null; //setBannerVisible(false);
+    const handleCloseBannerBtnClick = () => setBannerVisible(false);
 
     const showCloseBtn = () => (
         <div
             style={styles.closeBtn}
-            className="add-to-home-close-btn animated rotateIn"
+            className="add-to-home-close-btn"
             onClick={handleCloseBannerBtnClick}
         >
-            <i className="fas fa-times text-white"></i>
+            <i style={styles.textAndClosingBtn} className="fas fa-times"></i>
         </div>
     );
 
-    const shouldRender = run && bannerVisible; // && !isInStandaloneMode()
+    const shouldRender = run && bannerVisible && !isInStandaloneMode();
 
     return (
         <div>
-            {true
+            {true // replace with shouldRender after testing...
             ? (
                 <div
+                  style={styles.banner}
                   className="add-to-home-banner"
                   data-aos="fade-up"
                   data-aos-duration="2000"
@@ -128,15 +143,6 @@ export default function PwaInstaller({
         </div>
     );
 }
-
-PwaInstaller.propTypes = {
-  icon: PropTypes.string.isRequired,
-  title: PropTypes.string,
-  run: PropTypes.bool,
-  backgroundColor: PropTypes.string,
-  color: PropTypes.string,
-}
-
 
 /* COMMENTS
 n1: If the user selects Install, the app is installed (available as standalone desktop app), and the Install button no longer shows (the onbeforeinstallprompt event no longer fires if the app is already installed).
