@@ -71,10 +71,10 @@ export default function PwaInstaller({
 
     const styles = {
         textAndClosingBtn: {
-            color: color || "white";
+            color: color || "white",
         },
         banner: {
-            background: backgroundColor || "black";
+            background: backgroundColor || "black",
         }
         // icon: {
         //     animationDelay: '4s',

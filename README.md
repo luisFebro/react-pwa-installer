@@ -29,7 +29,7 @@ Then add the component to the main component of your app:
             ...
             <AllModals />
             <PwaInstaller
-                title="<strong>Download our app to homescreen</strong><br />and have a faster and awesome<br />access experience"
+                title="<strong>Download our app here</strong><br />and have a faster and awesome<br />access experience"
                 icon={`/icons/cool-192.png`}
             />
         <Footer />
