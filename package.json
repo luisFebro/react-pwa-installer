@@ -1,6 +1,6 @@
 {
   "name": "react-pwa-installer",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Turn your React site into PWA App for Android, iOS and Desktop with a customizable banner",
   "main": "build/index.js",
   "keywords": [
