@@ -74,14 +74,14 @@ export default function PwaInstaller({
         },
         banner: {
             background: backgroundColor || "black",
-        }
-        // icon: {
-        //     animationDelay: '4s',
-        // },
-        // closeBtn: {
-        //     animationDelay: '6s',
-        //     zIndex: 2100,
-        // },
+        },
+        icon: {
+            animationDelay: '4s',
+        },
+        closeBtn: {
+            animationDelay: '6s',
+            zIndex: 2100,
+        },
     }
 
     // RENDER
@@ -105,7 +105,7 @@ export default function PwaInstaller({
             className="add-to-home-close-btn"
             onClick={handleCloseBannerBtnClick}
         >
-            <i style={styles.textAndClosingBtn} className="fas fa-times"></i>
+            <i style={styles.textAndClosingBtn}>❌</i>
         </div>
     );
 
