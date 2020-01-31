@@ -7,14 +7,14 @@ Turn your React Site into [PWA](https://developer.mozilla.org/en-US/docs/Web/Pro
 
 <img src="screenshot.jpeg" align="right" title="Screenshot" width="200px">
 
-## What does this package do?
+## 👀 What does this package do?
 
 `react-jwt-installer` allows you to easily inform visitors that your React Site is installable and a native-like app can be placed on a smartphone or desktop's home screen for a more integrated, fast and smooth access through the app. A banner will appear with a customizable title, icon and colors and offering your new App installation. You can also control when this component should appear and how.  👌
 
-## Demo
+## 🔥 Demo
 You can see one example from the customized installation banner here: [awesome-pwa-demo](https://luisfebro.github.io/awesome-pwa-demo)
 
-## Instructions
+## 📖 Instructions
 Note that this component's installation is a piece in the process of building a complete PWA App. I will write an article on Medium Media to a complete step-by-step to get it done from `manifest.json` to `service worker` that requires to run your app. Let me know if you have a genuine interest about that, contact me here: mr.febro@gmail.com
 
 ## 🔧 Installation
@@ -44,7 +44,7 @@ Then add the component to the main component of your app:
 }
 ```
 
-## :pencil2: Options
+## ⚙️ Options
 
 These are props that allow you customize the component as follows:
 
@@ -58,12 +58,12 @@ These are props that allow you customize the component as follows:
 
 ## 💪 Contributing
 
-I would appreciate feedbacks for improvements, feel free to open an issue or a pull request [here](https://github.com/luisFebro/react-pwa-installer/pulls)!
+I would appreciate feedbacks for improvements or new ideas... feel free to open an issue or a pull request [here](https://github.com/luisFebro/react-pwa-installer/pulls)!
 
 ## ©️ License
 
 `react-pwt-installer` was created by [@luisFebro](https://github.com/luisFebro). It is available under the MIT license. See the [LICENSE.md](https://github.com/luisFebro/react-pwa-installer/blob/master/LICENSE) file for more info.
 
-## Disclaimer
+## ⚠️ Disclaimer
 
 Please, note that this package is still under construction and it may not work in your project as expected. Come back a few hours...
