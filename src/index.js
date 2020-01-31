@@ -68,7 +68,6 @@ export default function PwaInstaller({
         }
     }
 
-
     const styles = {
         textAndClosingBtn: {
             color: color || "white",
