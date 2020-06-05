@@ -9,7 +9,7 @@ Turn your React Site into [PWA](https://developer.mozilla.org/en-US/docs/Web/Pro
 
 ## 👀 What does this package do?
 
-`react-jwt-installer` allows you to easily inform visitors that your React Site is installable and a native-like app can be placed on a smartphone or desktop's home screen for a more integrated, fast and smooth access through the app. A banner will appear with a customizable title, icon and colors and offering your new App installation. You can also control when this component should appear and how.  👌
+`react-pwa-installer` allows you to easily inform visitors that your React Site is installable and a native-like app can be placed on a smartphone or desktop's home screen for a more integrated, fast and smooth access through the app. A banner will appear with a customizable title, icon and colors and offering your new App installation. You can also control when this component should appear and how.  👌
 
 ## 🔥 Live Demo
 You can see one example from the customized installation banner here: [awesome-pwa-demo](https://luisfebro.github.io/awesome-pwa-demo)
@@ -26,7 +26,7 @@ $ npm i --save react-pwa-installer
 ## 👈 Usage
 
 ```javascript
-import PwaInstaller from 'react-jwt-installer';
+import PwaInstaller from 'react-pwa-installer';
 ```
 
 Then add the component to the main component of your app:
